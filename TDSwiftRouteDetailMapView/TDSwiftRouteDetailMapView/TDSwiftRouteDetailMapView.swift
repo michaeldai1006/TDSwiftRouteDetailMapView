@@ -54,6 +54,7 @@ public class TDSwiftRouteDetailMapView: MKMapView, MKMapViewDelegate {
         if removeOldRoute {
             // Remove old annotations
             self.removeAnnotations(self.annotations)
+            self.removeOverlays(self.overlays)
         }
         
         // Place mark
