@@ -12,6 +12,11 @@
 		55578B7922C8CE24006EEA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55578B7722C8CE24006EEA5E /* Main.storyboard */; };
 		55578B7B22C8CE25006EEA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55578B7A22C8CE25006EEA5E /* Assets.xcassets */; };
 		55578B7E22C8CE25006EEA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55578B7C22C8CE25006EEA5E /* LaunchScreen.storyboard */; };
+		55578B8722C8CF2D006EEA5E /* TDSwiftRouteDetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55578B8622C8CF2D006EEA5E /* TDSwiftRouteDetailMapView.swift */; };
+		55BCFB6522CF0A6E0080C39E /* TDSwiftRouteDetailMapViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFB6422CF0A6E0080C39E /* TDSwiftRouteDetailMapViewConfig.swift */; };
+		55BCFB6722CF0C660080C39E /* TDSwiftRouteDetailMapViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFB6622CF0C660080C39E /* TDSwiftRouteDetailMapViewInfo.swift */; };
+		55BCFB6922CF42070080C39E /* TDSwiftRouteDetailMapViewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFB6822CF42070080C39E /* TDSwiftRouteDetailMapViewResult.swift */; };
+		55BCFB6B22CF8D740080C39E /* TDSwiftRouteDetailMapViewAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCFB6A22CF8D740080C39E /* TDSwiftRouteDetailMapViewAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		55578B7A22C8CE25006EEA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55578B7D22C8CE25006EEA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55578B7F22C8CE25006EEA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55578B8622C8CF2D006EEA5E /* TDSwiftRouteDetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSwiftRouteDetailMapView.swift; sourceTree = "<group>"; };
+		55BCFB6422CF0A6E0080C39E /* TDSwiftRouteDetailMapViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSwiftRouteDetailMapViewConfig.swift; sourceTree = "<group>"; };
+		55BCFB6622CF0C660080C39E /* TDSwiftRouteDetailMapViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSwiftRouteDetailMapViewInfo.swift; sourceTree = "<group>"; };
+		55BCFB6822CF42070080C39E /* TDSwiftRouteDetailMapViewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSwiftRouteDetailMapViewResult.swift; sourceTree = "<group>"; };
+		55BCFB6A22CF8D740080C39E /* TDSwiftRouteDetailMapViewAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSwiftRouteDetailMapViewAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,25 @@
 		55578B7222C8CE24006EEA5E /* TDSwiftRouteDetailMapView */ = {
 			isa = PBXGroup;
 			children = (
+				55578B8522C8CE6F006EEA5E /* TDSwiftRouteDetailMapView */,
 				55578B7322C8CE24006EEA5E /* AppDelegate.swift */,
 				55578B7522C8CE24006EEA5E /* ViewController.swift */,
 				55578B7722C8CE24006EEA5E /* Main.storyboard */,
 				55578B7A22C8CE25006EEA5E /* Assets.xcassets */,
 				55578B7C22C8CE25006EEA5E /* LaunchScreen.storyboard */,
 				55578B7F22C8CE25006EEA5E /* Info.plist */,
+			);
+			path = TDSwiftRouteDetailMapView;
+			sourceTree = "<group>";
+		};
+		55578B8522C8CE6F006EEA5E /* TDSwiftRouteDetailMapView */ = {
+			isa = PBXGroup;
+			children = (
+				55578B8622C8CF2D006EEA5E /* TDSwiftRouteDetailMapView.swift */,
+				55BCFB6422CF0A6E0080C39E /* TDSwiftRouteDetailMapViewConfig.swift */,
+				55BCFB6622CF0C660080C39E /* TDSwiftRouteDetailMapViewInfo.swift */,
+				55BCFB6822CF42070080C39E /* TDSwiftRouteDetailMapViewResult.swift */,
+				55BCFB6A22CF8D740080C39E /* TDSwiftRouteDetailMapViewAnnotation.swift */,
 			);
 			path = TDSwiftRouteDetailMapView;
 			sourceTree = "<group>";
@@ -136,6 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55578B7622C8CE24006EEA5E /* ViewController.swift in Sources */,
+				55578B8722C8CF2D006EEA5E /* TDSwiftRouteDetailMapView.swift in Sources */,
+				55BCFB6B22CF8D740080C39E /* TDSwiftRouteDetailMapViewAnnotation.swift in Sources */,
+				55BCFB6522CF0A6E0080C39E /* TDSwiftRouteDetailMapViewConfig.swift in Sources */,
+				55BCFB6922CF42070080C39E /* TDSwiftRouteDetailMapViewResult.swift in Sources */,
+				55BCFB6722CF0C660080C39E /* TDSwiftRouteDetailMapViewInfo.swift in Sources */,
 				55578B7422C8CE24006EEA5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E727FEDX2F;
 				INFOPLIST_FILE = TDSwiftRouteDetailMapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E727FEDX2F;
 				INFOPLIST_FILE = TDSwiftRouteDetailMapView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

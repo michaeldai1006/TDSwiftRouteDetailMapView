@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,73 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TDSwiftRouteDetailMapView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Agc-F8-dwb" customClass="TDSwiftRouteDetailMapView" customModule="TDSwiftRouteDetailMapView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Agc-F8-dwb" secondAttribute="height" multiplier="1:1" id="3wa-Ci-jsv"/>
+                                </constraints>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fco-09-9wG">
+                                <rect key="frame" x="0.0" y="655" width="414" height="241"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="RVn-RH-1fd">
+                                        <rect key="frame" x="71.5" y="96.5" width="271" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC8-hf-dDh">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="48"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="Route A">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="routeABtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Jg-rv-Iy7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3n-D0-DcI">
+                                                <rect key="frame" x="170" y="0.0" width="101" height="48"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <state key="normal" title="Route B">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="routeBBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZh-V3-89q"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RVn-RH-1fd" firstAttribute="centerY" secondItem="fco-09-9wG" secondAttribute="centerY" id="jkv-MD-dvN"/>
+                                    <constraint firstItem="RVn-RH-1fd" firstAttribute="centerX" secondItem="fco-09-9wG" secondAttribute="centerX" id="lG8-Qf-cxu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Agc-F8-dwb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FAB-Rt-dnj"/>
+                            <constraint firstAttribute="bottom" secondItem="fco-09-9wG" secondAttribute="bottom" id="LMZ-Dn-9tY"/>
+                            <constraint firstItem="fco-09-9wG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b3m-rR-21r"/>
+                            <constraint firstItem="Agc-F8-dwb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cO5-bG-uco"/>
+                            <constraint firstAttribute="trailing" secondItem="Agc-F8-dwb" secondAttribute="trailing" id="gCj-T8-Hei"/>
+                            <constraint firstItem="fco-09-9wG" firstAttribute="top" secondItem="Agc-F8-dwb" secondAttribute="bottom" id="lf1-qa-mJp"/>
+                            <constraint firstItem="Agc-F8-dwb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oFL-fo-Iqe"/>
+                            <constraint firstItem="fco-09-9wG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pAU-Vz-AYP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Agc-F8-dwb" id="2Kp-bF-Iw1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
 </document>
